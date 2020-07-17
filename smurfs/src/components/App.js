@@ -1,7 +1,10 @@
 import React, {useEffect, useState} from 'react'
 import {connect} from 'react-redux'
 
+import Smurf from './Smurf'
 import SmurfList from './SmurfsList'
+
+import AddSmurfForm from './AddSmurfForm'
 
 import {fetchSmurfs} from '../store/actions'
 
@@ -20,11 +23,12 @@ const App = props => {
 
   return (
     <div>
+      <h1 class='title'>I now officially HATE smurfs</h1>
       <SmurfList />
-      <h1 class='title'>smurfs</h1>
+      <AddSmurfForm />
       <div className="smurfsContainer">
         <div className="smurfInfo">
-          {props.smurf.name}
+          {props.smurf}
         </div>
       </div>
 
