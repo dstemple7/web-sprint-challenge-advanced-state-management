@@ -24,7 +24,11 @@ const App = props => {
   return (
     <div>
       <h1 class='title'>I now officially HATE smurfs</h1>
+      <h4>(except Shanda McShandy)</h4>
+      <br/>
       <SmurfList />
+      <br/>
+      <br/>
       <AddSmurfForm />
       <div className="smurfsContainer">
         <div className="smurfInfo">

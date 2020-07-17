@@ -1,6 +1,6 @@
 import {connect} from 'react-redux'
 import {addSmurf, handleChanges, fetchSmurfs} from '../store/actions/index'
-import React, {useState} from 'react'
+import React from 'react'
 
 const AddSmurfForm = props => {
   return (
