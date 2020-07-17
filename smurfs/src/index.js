@@ -9,7 +9,7 @@ import {reducer} from './store/reducers'
 
 import "./index.css";
 
-import App from "./App";
+import AppFinal from "./App";
 
 const store = createStore(reducer, applyMiddleware(thunk, logger))
 
@@ -17,7 +17,7 @@ const rootElement = document.getElementById('root')
 
 ReactDOM.render(
   <Provider store={store}>
-    <App />
+    <AppFinal />
   </Provider>,
   rootElement
 )

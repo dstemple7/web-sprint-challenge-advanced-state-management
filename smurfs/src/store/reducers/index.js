@@ -6,10 +6,13 @@ import {
 
 const initialState = {
   isLoading: false,
-  smurfs: {
-    message: []
-  },
-  error: ''
+  smurfs: [],
+  error: '',
+  values: {
+    name: '',
+    age: '',
+    height: ''
+  }
 }
 
 export const reducer = (state = initialState, action) => {

@@ -1,14 +1,14 @@
 import React from 'react';
 
-import List from './components/List'
+import App from './components/App'
 import "./index.css";
 
-function App() {
+function AppFinal() {
   return (
     <div className="App">
-      <List />
+      <App />
     </div>
   );
 }
 
-export default App;
+export default AppFinal;
